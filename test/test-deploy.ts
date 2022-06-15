@@ -20,6 +20,6 @@ describe("SimpleStorage", function () {
     let transactionResponse = await simpleStorage.store(expectedValue)
     let transactionReceipt = await transactionResponse.wait()
     let currentValue = await simpleStorage.retrieve()
-    expect(currentValue).to.equal(expectedValue)
+    expect(currentValue).to.equal(expectedValue)  
   })
 })
